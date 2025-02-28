@@ -605,22 +605,13 @@ PROC-KILL-REQ {
 }
 ```
 
-### PROC-INJ-SPAWN-REQ
+### PROC-INJ-REQ
 
 ```text
-PROC-INJ-SPAWN-REQ {
+PROC-INJ-REQ {
   shellcode   [1]  SEQUENCE of Byte
   capability  [2]  SEQUENCE of Byte
-}
-```
-
-### PROC-INJ-EXPLICIT-REQ
-
-```text
-INJECT-EXPLICIT-REQ {
-  process-id  [1]  UInt32
-  shellcode   [2]  SEQUENCE of Byte
-  capability  [3]  SEQUENCE of Byte
+  process-id  [3]  UInt32            OPTIONAL
 }
 ```
 
